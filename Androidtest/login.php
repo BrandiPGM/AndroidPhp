@@ -1,5 +1,5 @@
 <?php
-require_once 'conn.inc.php';
+require_once 'lib/conn.inc.php';
 header('content-Type: application/json ');
 $user_name = filter_var($_POST["Username"],FILTER_SANITIZE_STRING);
 $user_pass = filter_var($_POST["password"], FILTER_SANITIZE_STRING);

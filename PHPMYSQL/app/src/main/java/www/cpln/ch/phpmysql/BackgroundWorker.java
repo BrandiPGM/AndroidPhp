@@ -30,7 +30,7 @@ public class BackgroundWorker extends AsyncTask<String, String,String> {
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
-        String login_url = "http://157.26.174.75/AndroidConnection/login.php";
+        String login_url = "http://157.26.174.84/AndroidConnection/Androidtest/login.php";
         if(type.equals("login")){
             try {
                 String user_name = params[1];

@@ -1,0 +1,20 @@
+﻿<Window x:Class="REST_Csharp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:REST_Csharp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="456.863" Width="473.039" Loaded="Window_Loaded">
+    <Grid Margin="0,0,0,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="448*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="cboRegion" HorizontalAlignment="Left" Margin="65.451,50,0,0" VerticalAlignment="Top" Width="293" IsEditable="True" IsSynchronizedWithCurrentItem="False" SelectionChanged="cboRegion_SelectionChanged" Grid.Column="1"/>
+        <ComboBox x:Name="cboCountry" HorizontalAlignment="Left" Margin="65.451,171,0,0" VerticalAlignment="Top" Width="293" IsEditable="True" Grid.Column="1"/>
+        <Label x:Name="label" Content="Région" HorizontalAlignment="Left" Margin="23,50,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_Copy" Content="Pays" HorizontalAlignment="Left" Margin="23,167,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
